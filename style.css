@@ -128,7 +128,9 @@
     padding-left: .2em;
     position: fixed;
     top: 7em;
-    width: 100%;
+    width: 10vw;
+    left:0vw;
+    
   }
   .logo {
     position:fixed;
@@ -186,4 +188,5 @@
   .hidden {
     display: none;
   }
+  
   
