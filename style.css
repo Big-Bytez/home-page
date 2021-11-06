@@ -1,204 +1,229 @@
 /* style.css */
 
 * {
-     font-family: 'Varela Round', sans-serif;
-    
-  }
-  @font-face {
     font-family: 'Varela Round', sans-serif;
-    src: url("https://fonts.google.com/");
+   
+ }
+ @font-face {
+   font-family: 'Varela Round', sans-serif;
+   src: url("https://fonts.google.com/");
 }
-  
-  body {
-    align-items: center;
-    display: grid;
-    justify-items: center;
-    background-color: #ffffff; /*white background*/
-  }
-  
-  body, html {
-    height: 150%;
-    width: 100%;
-  }
-  .searchbox {  
-    float: left;
-    }  
-    input[type=text] {  
-    padding: 6px;  
-    margin-top: 10px;  
-    font-size: 17px;  
-    border: none;  
-    }  
-    searchbar {
-    margin-top: 0%;
-    justify-content: center;
-    align-self: center;
-    justify-items: center;
+ 
+ body {
+   align-items: center;
+   display: grid;
+   justify-items: center;
+   background-color: #ffffff; /*white background*/
+ }
+ 
+ body, html {
+   height: 150%;
+   width: 100%;
+ }
+ .searchbox {  
+   float: left;
+   }  
+   input[type=text] {  
+   padding: 6px;  
+   margin-top: 10px;  
+   font-size: 17px;  
+   border: none;  
+   }  
+   searchbar {
+   margin-top: 0%;
+   justify-content: center;
+   align-self: right;
+   justify-items: center;
 
-    display: inline-block;
-    height: 10em;
-    width: 10em;
-    position: fixed;
-    top: 1.5em;
-    left: 33%;
-    }
-    
-    .searchbox button {  
-      
-    padding: 8px;  
-    margin-top: 10px;  
-    margin-left: 10px;  
-    background: orange;  
-    font-size: 20px;  
-    border: none;  
-    cursor: pointer;   
-    }  
-    .searchbox button:hover {  
-    background: red;  
-    }  
-    form {
-        background-color: #ff000065;
-        width: 33vw;
-        height: 44px;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-      }
-      input {
-        all: unset;
-        font: 16px system-ui;
-        color: #fff;
-        height: 100%;
-        width: 100%;
-        padding: 6px 10px;
-      }
-      ::placeholder {
-        color: #fff;
-        opacity: 0.7; 
-      }
+   display: inline-block;
+   height: 10em;
+   width: 10em;
+   position: fixed;
+   top: 1.5em;
+   left: 33%;
+   }
+   
+   .searchbox button {  
+     
+   padding: 8px;  
+   margin-top: 10px;  
+   margin-left: 10px;  
+   background: red;  
+   font-size: 20px;  
+   border: none;  
+   cursor: pointer;   
+   }  
+   .searchbox button:hover {  
+   background: red;  
+   }  
+   form {
+       background-color: #ffc400b2;
+       width: 33vw;
+       height: 44px;
+       border-radius: 5px;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+     }
+     input {
+       all: unset;
+       font: 16px system-ui;
+       color: rgb(190, 139, 62);
+       height: 100%;
+       width: 100%;
+       padding: 6px 10px;
+     }
+     ::placeholder {
+       color: #fff;
+       opacity: 0.7; 
+     }
 .button {
-    background-color: #ff0000;
-    border: none;
-    color: white;
-    background: #b90c0c;
-    padding: 4px;
-    width: 100px;
-    height: 100px;
-    margin-left: 1.1em;
-    text-align: center;
-    align-self: center;
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1.2rem;
-    box-shadow: 0 .1em .2em rgba(0, 0, 0, 0.15);
-  }
-
-.button5,.button20,.button60 {border-radius: 50%;}
-.button:hover {
-        background: #b85454;
-        cursor: pointer;
-    }
-.button:active{
-    color: red;
-    cursor: pointer;
+   background-color: #ff0000;
+   border: none;
+   color: white;
+   background: #b90c0c;
+   padding: 25px;
+   width: 5em;
+   height: 5em;
+   margin-left: 1.1em;
+   text-align: center;
+   align-self: center;
+   text-decoration: none;
+   cursor: pointer;
+   display: inline-block;
+   font-size: 2.5rem;
+   box-shadow: 0 .1em .2em rgba(0, 0, 0, 0.15);
+ }
+.time-buttons{
+    justify-self: center;
+   display: inline-block;
 }
-  h2 {
-    font-size: 2.3rem;
-  }
-  
-  body>header {
-    justify-content: center;
-    align-self: center;
-    justify-items: center;
 
-    display: inline-block;
-    height: 5em;
-    width: 50em;
-    position: absolute;
-    top: 25vh;
-    left: 30%;
-  }
-  
-  sideBar {
-    display: grid;
-    height: 20em;
-    justify-items: begin;
-    padding-left: .2em;
-    position: fixed;
-    top: 7em;
-    width: 10vw;
-    left:0vw;
-    
-  }
-  .logo {
-    position:fixed;
+.button10,.button30,.button60 {border-radius: 50%;}
+.button:hover {
+       background: #b85454;
+       cursor: pointer;
+   }
+.button:active{
+   color: red;
+   cursor: pointer;
+}
+ h2 {
+   font-size: 2.3rem;
+   margin-left: 11%;
+
+ }
+ 
+ body>header {
+   justify-content: left;
+   align-self: center;
+   justify-items: left;
+
+   display: inline-block;
+   height: 5em;
+   width: 70em;
+   position: absolute;
+   top: 25vh;
+   margin-left: 27%;
+ }
+ 
+ sideBar {
+   display: grid;
+   height: 20em;
+   justify-items: begin;
+   padding-left: .2em;
+   position: fixed;
+   top: 5.5em;
+   width: 10vw;
+   left:0vw;
+   
+ }
+ .logoImg {
+   position:fixed;
+   height: 10em;
+   width: 20em;
+   justify-items: begin;
+   padding-left: .2em;
+   top: 1.2em;
+   width: 10%;
+   left: 0vw ;
+ }
+ .logoText {
+    position:absolute;
     height: 10em;
     width: 20em;
     justify-items: begin;
-    padding-left: .2em;
-    top: 1em;
-    width: 10%;
+    padding-left: 1.3em;
+    top: 0em;
+    padding-top: 0%;
     left: 0vw ;
+    font-style: oblique;
   }
-  .shuffle{
-    position: fixed;
-    height:5em;
-    width: 4em;
-    justify-self: right;
-    margin-top: 1vh;
-    margin-right: 8vw;
-    padding-left: .2em;
-    top: 2vh;
-    background-color:none;
-  }
-  .user-portal{
-    position: fixed;
-    height: 4em;
-    width: 4em;
-    justify-self: right;
-    margin-left:5em;
-    margin-right: 1vw;
-    padding-left: .2em;
-    top: 2vh;
-    background-color:none;
-  }
-.sort{
-  display: inline-block;
-  position: relative;
-  padding: .3em;  
-    margin-top: .2em;  
-    margin-left: .2em;
-    margin-right: .2em;
-    align-self: center;
-    background: rgba(255, 0, 0, 0.425);  
-    font-size: 1rem;  
-    border: none;  
-    cursor: pointer; 
-  width: 3em;
+ .shuffle{
+  position: fixed;
+  height:5em;
+  width: 4em;
+  justify-self: right;
+  margin-top: 2.5vh;
+  margin-right: 8vw;
+  padding-left: .2em;
+  top: 2vh;
+  background-color:none;
 }
-  .vert-navigation{
-    position: fixed;
-  }
-  body>sideBar a {
-    border-bottom: .1em solid rgb(155, 155, 155);
-    border-top: .1em solid rgb(155, 155, 155);
-    color: rgb(255, 0, 0);
-    font-size: 1.3rem;
-    padding-bottom:2.5px;
-  }
-  body>header a:hover {
-    border-bottom: 2px solid transparent;
-  }
-  main>section {
-    display: grid;
-    max-width: 400px;
-    row-gap: 2em;
+ .user-portal{
+   position: fixed;
+   height: 4em;
+   width: 4em;
+   justify-self: right;
+   margin-right: 3em;
+   padding-left: .2em;
+   top: 1em;
+   background-color:none;
+ }
+.sort{
+ display: inline-block;
+ position: relative;
+ padding: .3em;  
+   margin-top: .2em;  
+   margin-left: .2em;
+   margin-right: .2em;
+   align-self: center;
+   background: rgba(233, 85, 16, 0.801);  
+   font-size: 1rem;  
+   color: rgb(255, 255, 255);
+   border: none;  
+   cursor: pointer; 
+ width: 3em;
+}
+ .vert-navigation{
+    background: #b90c0c;
+   position: fixed;
+   width: 100px;
+   height: 90%;
+ }
+ .browse{
+    background-color: #ff141479;
     width: 100%;
-  }
-  .hidden {
-    display: none;
-  }
-  
-  
+    height: 30px;
+    
+ }
+ body>sideBar a {
+   border-bottom: .1em solid rgb(155, 155, 155);
+   border-top: .1em solid rgb(155, 155, 155);
+   color: rgb(255, 255, 255);
+   font-size: 1.3rem;
+   padding-bottom:2.5px;
+ }
+ body>header a:hover {
+   border-bottom: 2px solid transparent;
+ }
+ header>section {
+   display: grid;
+   max-width: 400px;
+   row-gap: 2em;
+   width: 100%;
+ }
+ .hidden {
+   display: none;
+ }
+ 
