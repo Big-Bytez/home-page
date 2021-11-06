@@ -37,11 +37,12 @@
 
     display: inline-block;
     height: 10em;
-    width: 50em;
-    position: absolute;
+    width: 10em;
+    position: fixed;
     top: 1.5em;
-    left: 65%;
+    left: 33%;
     }
+    
     .searchbox button {  
       
     padding: 8px;  
@@ -57,7 +58,7 @@
     }  
     form {
         background-color: #ff000065;
-        width: 300px;
+        width: 33vw;
         height: 44px;
         border-radius: 5px;
         display: flex;
@@ -116,9 +117,10 @@
     height: 5em;
     width: 50em;
     position: absolute;
-    top: 2em;
+    top: 25vh;
     left: 30%;
   }
+  
   sideBar {
     display: grid;
     height: 20em;
@@ -129,13 +131,14 @@
     width: 100%;
   }
   .logo {
-    position: fixed;
+    position:fixed;
     height: 10em;
     width: 20em;
     justify-items: begin;
     padding-left: .2em;
     top: 1em;
-    width: 100%;
+    width: 10%;
+    left: 0vw ;
   }
   .user-portal{
     position: fixed;
