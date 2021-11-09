@@ -24,11 +24,8 @@
    width: 100%;
  }
  body>sideBar a {
-  font-family: 'Gugi', cursive;
-  border-bottom: .1em solid rgb(155, 155, 155);
-  border-top: .1em solid rgb(155, 155, 155);
   color: rgb(255, 255, 255);
-  font-size: 1.3rem;
+  font-size: large;
   padding-bottom:2.5px;
 }
 header {
@@ -38,11 +35,12 @@ header {
   justify-self: center;
   align-content: center;
   display: inline-block;
+  padding-left: 8%;
   height: 20%;
   position: absolute;
   top: 15vh;
-  margin-left: 10%;
-  width: 90%;
+  margin-left: 0%;
+  width: 100%;
 }
 body{
   justify-content: center;
@@ -63,17 +61,15 @@ header>section {
  h2 {
   font-size: xxx-large;
   align-self: center;
-  margin-left: 1em;
 
 }
 sideBar {
   display: grid;
-  height: 20em;
   justify-items: begin;
   padding-left: .2em;
   position: fixed;
   top: 5.5em;
-  width: 10vw;
+  width: 6em;
   left:0vw;
 }
  .searchbox {  
@@ -111,7 +107,7 @@ sideBar {
    background: red;  
    }  
    form {
-       background-color: #e42c2cb2;
+       background-color: #ff141479;
        width: 33vw;
        height: 44px;
        border-radius: 5px;
@@ -130,6 +126,7 @@ sideBar {
      ::placeholder {
        color: #fff;
        opacity: 0.7; 
+      
      }
      .button {
       background-color: #ff0000;
@@ -138,7 +135,6 @@ sideBar {
       background: #b90c0c;
       width: 5em;
       height: 5em;
-      margin-left: 1.1em;
       text-align: center;
       align-self: center;
       text-decoration: none;
@@ -147,12 +143,11 @@ sideBar {
       font-size: xxx-large;
       box-shadow: 0 .1em .2em rgba(0, 0, 0, 0.15);
     }
-.time-buttons{
-    justify-self: center;
-   display: inline-block;
-   font-size: x-large;
+
+.button10,.button30,.button60 {border-radius: 50%;
+  margin-left: .8em;
+    margin-right: .8em;
 }
-.button10,.button30,.button60 {border-radius: 50%;}
 .button:hover {
        background: #b85454;
        cursor: pointer;
@@ -171,7 +166,7 @@ sideBar {
   justify-self: right;
   margin-top: 3.7vh;
   margin-right: 0vw;
-  margin-left: 42%;
+  margin-left: 36%;
   padding-left: 3vw;
   top: .2em;
   background-color:none;
@@ -180,7 +175,7 @@ sideBar {
    position: fixed;
    justify-self: right;
    margin-right: 0vw;
-   margin-left: 50%;
+   margin-left: 44%;
    padding-left: .2em;
    top: 1em;
    background-color:none;
@@ -189,6 +184,7 @@ sideBar {
    position:fixed;
    justify-items: end;
    padding-left: .2em;
+   padding-right: 5em;
    top: 1.2em;
    width: 10%;
    left: 0vw;
@@ -235,14 +231,25 @@ sideBar {
  .vert-navigation{
     background: #b90c0c;
    position: fixed;
-   width: 100px;
+   width: 7%;
    height: 95%;
+   padding-top: 2%;
  }
- .browse{
+ h5{
     background-color: #ff141479;
-    width: 100%;
-    height: 30px;
+    color: white;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: medium;
+    justify-content: center;
+    align-self: center;
+    justify-items: center;
+    text-justify: center;
+    bottom: 0;
  }
+ @media only screen and (max-width: 640px)  {
+
+}
  .hidden {
    display: none;
  }
