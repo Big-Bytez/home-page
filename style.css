@@ -6,20 +6,76 @@
  }
  @font-face {
    font-family: 'Varela Round', sans-serif;
+   font-family: 'Gugi', cursive;
+  font-family: 'Nosifer', cursive;
+  font-family: 'VT323', monospace;
    src: url("https://fonts.google.com/");
+   
 }
  
  body {
    align-items: center;
    display: grid;
    justify-items: center;
-   background-color: #ffffff; /*white background*/
+   background-color: #eee6e6; /*white background*/ /*yellow option:#e9e2cc pink option: #eee4e4 */
  }
- 
  body, html {
    height: 150%;
    width: 100%;
  }
+ body>sideBar a {
+  font-family: 'Gugi', cursive;
+  border-bottom: .1em solid rgb(155, 155, 155);
+  border-top: .1em solid rgb(155, 155, 155);
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  padding-bottom:2.5px;
+}
+header {
+  justify-content: center;
+  align-self: center;
+  justify-items: center;
+  justify-self: center;
+  align-content: center;
+  display: inline-block;
+  height: 20%;
+  position: absolute;
+  top: 15vh;
+  margin-left: 10%;
+  width: 90%;
+}
+body{
+  justify-content: center;
+  align-self: center;
+  justify-items: center;
+  justify-self: center;
+  align-content: center;
+}
+body>header a:hover {
+  border-bottom: 2px solid transparent;
+}
+header>section {
+  display: grid;
+  max-width: 400px;
+  row-gap: 2em;
+  width: 100%;
+}
+ h2 {
+  font-size: xxx-large;
+  align-self: center;
+  margin-left: 1em;
+
+}
+sideBar {
+  display: grid;
+  height: 20em;
+  justify-items: begin;
+  padding-left: .2em;
+  position: fixed;
+  top: 5.5em;
+  width: 10vw;
+  left:0vw;
+}
  .searchbox {  
    float: left;
    }  
@@ -38,13 +94,11 @@
    display: inline-block;
    height: 10em;
    width: 10em;
-   position: fixed;
+   position: absolute;
    top: 1.5em;
    left: 33%;
    }
-   
-   .searchbox button {  
-     
+   .searchbox button {   
    padding: 8px;  
    margin-top: 10px;  
    margin-left: 10px;  
@@ -57,7 +111,7 @@
    background: red;  
    }  
    form {
-       background-color: #ffc400b2;
+       background-color: #e42c2cb2;
        width: 33vw;
        height: 44px;
        border-radius: 5px;
@@ -68,7 +122,7 @@
      input {
        all: unset;
        font: 16px system-ui;
-       color: rgb(190, 139, 62);
+       color: rgb(255, 255, 255);
        height: 100%;
        width: 100%;
        padding: 6px 10px;
@@ -77,28 +131,27 @@
        color: #fff;
        opacity: 0.7; 
      }
-.button {
-   background-color: #ff0000;
-   border: none;
-   color: white;
-   background: #b90c0c;
-   padding: 25px;
-   width: 5em;
-   height: 5em;
-   margin-left: 1.1em;
-   text-align: center;
-   align-self: center;
-   text-decoration: none;
-   cursor: pointer;
-   display: inline-block;
-   font-size: 2.5rem;
-   box-shadow: 0 .1em .2em rgba(0, 0, 0, 0.15);
- }
+     .button {
+      background-color: #ff0000;
+      border: none;
+      color: white;
+      background: #b90c0c;
+      width: 5em;
+      height: 5em;
+      margin-left: 1.1em;
+      text-align: center;
+      align-self: center;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-block;
+      font-size: xxx-large;
+      box-shadow: 0 .1em .2em rgba(0, 0, 0, 0.15);
+    }
 .time-buttons{
     justify-self: center;
    display: inline-block;
+   font-size: x-large;
 }
-
 .button10,.button30,.button60 {border-radius: 50%;}
 .button:hover {
        background: #b85454;
@@ -108,77 +161,59 @@
    color: red;
    cursor: pointer;
 }
- h2 {
-   font-size: 2.3rem;
-   margin-left: 11%;
-
- }
- 
- body>header {
-   justify-content: left;
-   align-self: center;
-   justify-items: left;
-
-   display: inline-block;
-   height: 5em;
-   width: 70em;
-   position: absolute;
-   top: 25vh;
-   margin-left: 27%;
- }
- 
- sideBar {
-   display: grid;
-   height: 20em;
-   justify-items: begin;
-   padding-left: .2em;
+.top-nav{
+  width: 100%;
+  display:flex; 
+  flex-direction: row;
+}
+.shuffle{
+  position: fixed;
+  justify-self: right;
+  margin-top: 3.7vh;
+  margin-right: 0vw;
+  margin-left: 42%;
+  padding-left: 3vw;
+  top: .2em;
+  background-color:none;
+}
+ .user-portal{
    position: fixed;
-   top: 5.5em;
-   width: 10vw;
-   left:0vw;
-   
+   justify-self: right;
+   margin-right: 0vw;
+   margin-left: 50%;
+   padding-left: .2em;
+   top: 1em;
+   background-color:none;
  }
  .logoImg {
    position:fixed;
-   height: 10em;
-   width: 20em;
-   justify-items: begin;
+   justify-items: end;
    padding-left: .2em;
    top: 1.2em;
    width: 10%;
-   left: 0vw ;
+   left: 0vw;
  }
  .logoText {
     position:absolute;
     height: 10em;
     width: 20em;
     justify-items: begin;
-    padding-left: 1.3em;
+    padding-left: 1.6em;
+    padding-right: 8em;
     top: 0em;
+    margin-top: 0%;
     padding-top: 0%;
     left: 0vw ;
     font-style: oblique;
   }
- .shuffle{
-  position: fixed;
-  height:5em;
-  width: 4em;
-  justify-self: right;
-  margin-top: 2.5vh;
-  margin-right: 8vw;
-  padding-left: .2em;
-  top: 2vh;
-  background-color:none;
-}
- .user-portal{
-   position: fixed;
-   height: 4em;
-   width: 4em;
-   justify-self: right;
-   margin-right: 3em;
-   padding-left: .2em;
-   top: 1em;
-   background-color:none;
+  h4{
+   font-size: 5vh;
+    text-decoration: wavy;
+    color: black;
+    margin-left: 1em;
+    top: 0em;
+    margin-top: 9%;
+    padding-top: 0%;
  }
 .sort{
  display: inline-block;
@@ -187,41 +222,26 @@
    margin-top: .2em;  
    margin-left: .2em;
    margin-right: .2em;
+   margin-bottom: .2em;  
    align-self: center;
-   background: rgba(233, 85, 16, 0.801);  
+   background: rgba(156, 5, 5, 0.801);  
    font-size: 1rem;  
    color: rgb(255, 255, 255);
    border: none;  
    cursor: pointer; 
- width: 3em;
+ width: 4em;
+ height: 34px;
 }
  .vert-navigation{
     background: #b90c0c;
    position: fixed;
    width: 100px;
-   height: 90%;
+   height: 95%;
  }
  .browse{
     background-color: #ff141479;
     width: 100%;
     height: 30px;
-    
- }
- body>sideBar a {
-   border-bottom: .1em solid rgb(155, 155, 155);
-   border-top: .1em solid rgb(155, 155, 155);
-   color: rgb(255, 255, 255);
-   font-size: 1.3rem;
-   padding-bottom:2.5px;
- }
- body>header a:hover {
-   border-bottom: 2px solid transparent;
- }
- header>section {
-   display: grid;
-   max-width: 400px;
-   row-gap: 2em;
-   width: 100%;
  }
  .hidden {
    display: none;
