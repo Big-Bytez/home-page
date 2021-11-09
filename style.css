@@ -59,6 +59,9 @@ header>section {
   width: 100%;
 }
  h2 {
+   width: 80%;
+   padding-left: 10%;
+   padding-right: 10%;
   font-size: 8.6vh;
   align-self: center;
 
@@ -248,7 +251,9 @@ sideBar {
     bottom: 0;
  }
  @media only screen and (max-width: 640px)  {
-
+.time-buttons{
+  display:none;
+}
 }
  .hidden {
    display: none;
